@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Gender validator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>CURP</ion-label>
+          <ion-input type="text" [(ngModel)]="curp"></ion-input>
+        </ion-item>
+        <button ion-button (click)="isMen()">Guess</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

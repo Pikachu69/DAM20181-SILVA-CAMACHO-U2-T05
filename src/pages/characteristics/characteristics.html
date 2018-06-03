@@ -1,0 +1,52 @@
+<!--
+  Generated template for the CharacteristicsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Characteristics</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-card *ngIf="isMen">
+    <ion-card-header>
+      I'm a MAN
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <label>Beard</label>
+        </ion-item>
+        <ion-item>
+          <label>Strong</label>
+        </ion-item>
+        <ion-item>
+          <label>Gentleman</label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="!isMen">
+    <ion-card-header>
+      I'm a WOMAN
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+          <ion-item>
+              <label>Long Hair</label>
+            </ion-item>
+            <ion-item>
+              <label>Beauty</label>
+            </ion-item>
+            <ion-item>
+              <label>Secretly evil</label>
+            </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
